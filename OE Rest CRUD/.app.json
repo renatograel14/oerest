@@ -4,13 +4,74 @@
     {
       "type": "kendo-ui-mobile:view",
       "name": "home",
-      "components": [],
-      "title": "Home View",
+      "components": [
+        {
+          "type": "kendo-ui-mobile:editableList",
+          "listExtraFields": [],
+          "detailExtraFields": [],
+          "components": [
+            {
+              "type": "kendo-ui-mobile:editableListForm",
+              "components": [
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "contact",
+                  "title": "Contact",
+                  "inputType": "shortText",
+                  "dataBindingOptional": "Contact"
+                }
+              ],
+              "name": "editableListForm4",
+              "formType": "list"
+            },
+            {
+              "type": "kendo-ui-mobile:editableListForm",
+              "components": [
+                {
+                  "type": "kendo-ui-mobile:editableListFormField",
+                  "name": "name",
+                  "title": "Name",
+                  "inputType": "text",
+                  "placeholder": "Customer Name",
+                  "dataBinding": "Name"
+                }
+              ],
+              "name": "editableListForm21",
+              "formType": "add"
+            }
+          ],
+          "name": "homeModel",
+          "dataProvider": "jsonDataProvider1",
+          "collection": "response.dsCustomer.dsCustomer.ttCustomer",
+          "headerField": "Name",
+          "pullToRefresh": false,
+          "endlessScroll": false,
+          "deleteItemButton": false,
+          "addItemForm": true,
+          "editItemForm": false
+        }
+      ],
+      "title": "Customers",
       "addToNavigation": true,
-      "icon": "home"
+      "icon": "contacts"
     }
   ],
-  "dataProviders": [],
+  "dataProviders": [
+    {
+      "type": "kendo-ui-mobile:dataProvider",
+      "name": "jsonDataProvider",
+      "title": "JSON Data Service",
+      "source": "json",
+      "url": "http://localhost:8810/rest/workshoprestService/customerservices/"
+    },
+    {
+      "type": "kendo-ui-mobile:dataProvider",
+      "name": "jsonDataProvider1",
+      "title": "JSON Data Service",
+      "source": "json",
+      "url": "https://localhost:8811/rest/workshoprestService/customerservices/"
+    }
+  ],
   "name": "kendoUiMobileApp",
   "navigation": "tabstrip",
   "view": "home",
