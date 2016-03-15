@@ -1,0 +1,45 @@
+{
+  "ProjectName": "OE Rest CRUD",
+  "ProjectGuid": "1df81975-d7bc-4579-97b4-a29d3f52a4e6",
+  "projectVersion": 1,
+  "AppIdentifier": "com.telerik.OERestCRUD",
+  "DisplayName": "OE Rest CRUD",
+  "Author": "",
+  "Description": "OE Rest CRUD",
+  "BundleVersion": "1.0",
+  "AndroidVersionCode": "1",
+  "iOSDeviceFamily": [
+    "1",
+    "2"
+  ],
+  "iOSBackgroundMode": [],
+  "ProjectTypeGuids": "{070BCB52-5A75-4F8C-A973-144AF0EAFCC9}",
+  "FrameworkVersion": "3.7.0",
+  "AndroidPermissions": [
+    "android.permission.INTERNET"
+  ],
+  "DeviceOrientations": [
+    "Portrait",
+    "Landscape"
+  ],
+  "AndroidHardwareAcceleration": "false",
+  "iOSStatusBarStyle": "Default",
+  "Framework": "Cordova",
+  "WP8TileTitle": "",
+  "WP8Publisher": "",
+  "WP8Capabilities": [
+    "ID_CAP_NETWORKING",
+    "ID_CAP_WEBBROWSERCOMPONENT"
+  ],
+  "WP8Requirements": [],
+  "WP8PublisherID": "{5bec4e04-6ac2-4dba-a209-c6fad0466fc8}",
+  "WP8ProductID": "{72c899c4-cdbb-4a8e-b57e-0bd10f4acc3f}",
+  "WPSdk": "8.0",
+  "WP8PackageIdentityName": "1234Telerik.OERestCRUD",
+  "WP8WindowsPublisherName": "CN=Telerik",
+  "WP8SupportedResolutions": [
+    "ID_RESOLUTION_WVGA",
+    "ID_RESOLUTION_WXGA",
+    "ID_RESOLUTION_HD720P"
+  ]
+}
